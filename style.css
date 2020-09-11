@@ -70,6 +70,10 @@ main .search input {
   background-position: 3% 50%;
 }
 
+main .search input:focus {
+  outline: none;
+}
+
 main .search .button ul {
   display: flex;
   justify-content: center;

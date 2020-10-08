@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 13px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+/* NAVIGATION */
+
+.nav {
+  &__ul {
+    justify-content: flex-end;
+    margin-right: 1em;
+    padding: 0;
+    display: flex;
+    list-style: none;
+  }
+
+  &__link {
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+
+    &--login {
+      background-color: #4285f4;
+      padding: 0.4em 1em;
+      color: white;
+      margin-left: 1em;
+    }
+  }
+}
+
+/* MAIN */
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 300px;
+}
+
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+
+  &__input {
+    margin: 1em 4em;
+    max-width: 300px;
+    min-width: 300px;
+    border-radius: 20px;
+    border: 0.5px solid lightgray;
+    padding: 1em;
+    text-indent: 2em;
+    background-image: url(/img/search-icon.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: 3% 50%;
+
+    @media (min-width: 500px) {
+      min-width: 500px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+      height: 10px;
+      width: 10px;
+      background-image: url(/img/cancel-search.png);
+      background-size: cover;
+    }
+  }
+
+  &__buttons {
+    &__row {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+    }
+  }
+}
+
+.btn {
+  border: none;
+  font-size: 0.8em;
+  outline: none;
+  border-radius: 3px;
+  font-size: 110%;
+
+  &--search {
+    background-color: #f4f4f4;
+    margin-right: 1em;
+    padding: 0.8em 1em;
+    color: #5f6367;
+    text-decoration: none;
+  }
+}
+
+/* FOOTER */
+.footer {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav__link {
+    color: #5f6367;
+    font-size: 14px;
+  }
+}

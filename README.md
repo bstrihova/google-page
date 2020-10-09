@@ -1,2 +1,2 @@
 # google-page
-This page copies the design of the Google Search page. It is responsive, uses SCSS & BEM. If user enters a text and hits Enter (or clicks Google Search button), user will be forwarded to actual Google and search results will be displayed for searched text.
+If you want to search for something, enter a text in the input and hit Enter (or click Google Search button), you will be forwarded to actual Google and search results will be displayed for what you've been looking for.
